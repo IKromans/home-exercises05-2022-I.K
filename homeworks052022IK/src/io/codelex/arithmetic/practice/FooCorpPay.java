@@ -62,9 +62,8 @@ public class FooCorpPay {
 
     public static void calculateSalary() throws Exception {
         double salary = 0;
-        if ((basePay < hourPay) || hoursWorked > maxHours) {
+        if (basePay < hourPay || hoursWorked > maxHours) {
             System.out.println("Error!!!");
-            ;
         } else if (hoursWorked > 40) {
             salary = basePay * 40 + basePay * 1.5 * (hoursWorked - 40);
             System.out.println("Salary is: " + salary);

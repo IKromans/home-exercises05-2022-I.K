@@ -62,6 +62,12 @@ public class CalculateArea {
         System.out.print("What is the circle's radius? ");
         radius = BigDecimal.valueOf(keyboard.nextDouble());
 
+        while (radius.intValue() < 0) {
+            System.out.println("Error!!! , only positive numbers allowed!");
+            System.out.print("Enter circle's radius again! : ");
+            radius = BigDecimal.valueOf(keyboard.nextDouble());
+        }
+
         // Display output
         System.out.println("The circle's area is "
                 + Geometry.areaOfCircle(radius));
@@ -77,10 +83,20 @@ public class CalculateArea {
         // Get length
         System.out.print("Enter length? ");
         length = BigDecimal.valueOf(keyboard.nextDouble());
+        while (length.intValue() < 0) {
+            System.out.println("Error!!! , only positive numbers allowed!");
+            System.out.print("Enter length again! : ");
+            length = BigDecimal.valueOf(keyboard.nextDouble());
+        }
 
         // Get width
         System.out.print("Enter width? ");
         width = BigDecimal.valueOf(keyboard.nextDouble());
+        while (width.intValue() < 0) {
+            System.out.println("Error!!! , only positive numbers allowed!");
+            System.out.print("Enter width again! : ");
+            width = BigDecimal.valueOf(keyboard.nextDouble());
+        }
 
         // Display output
         System.out.println("The rectangle's area is "
@@ -97,10 +113,20 @@ public class CalculateArea {
         // Get the base
         System.out.print("Enter length of the triangle's base? ");
         base = BigDecimal.valueOf(keyboard.nextDouble());
+        while (base.intValue() < 0) {
+            System.out.println("Error!!! , only positive numbers allowed!");
+            System.out.print("Enter base again! : ");
+            base = BigDecimal.valueOf(keyboard.nextDouble());
+        }
 
         // Get the height
         System.out.print("Enter triangle's height? ");
         height = BigDecimal.valueOf(keyboard.nextDouble());
+        while (height.intValue() < 0) {
+            System.out.println("Error!!! , only positive numbers allowed!");
+            System.out.print("Enter height again! : ");
+            height = BigDecimal.valueOf(keyboard.nextDouble());
+        }
 
         // Display the triangle's area.
         System.out.println("The triangle's area is "

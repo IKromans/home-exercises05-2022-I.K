@@ -6,7 +6,7 @@ public class CheckOddEven {
     public static void main(String[] args) {
 
 
-        do {
+        while (true){
             Scanner numberScanner = new Scanner(System.in);
             System.out.print("Please enter number: ");
             int i = numberScanner.nextInt();
@@ -17,6 +17,6 @@ public class CheckOddEven {
                 System.out.println("Odd Number");
             }
             System.out.println("bye!");
-        } while (true);
+        }
     }
 }

@@ -4,10 +4,10 @@ import io.codelex.NoCodeWrittenException;
 
 public class SadFor {
     public static void main(String[] args) {
-        System.out.println(test1());
+        test1();
     }
 
-    public static String test1() {
+    public static void test1() {
 
         for (int i = 0; i < 10; i++) {
             if (Math.sqrt(i) > 2.5) {
@@ -15,7 +15,6 @@ public class SadFor {
             }
             System.out.println(i + ", ");
         }
-        System.out.println("end");;
-        return null;
+        System.out.println("end");
     }
 }
