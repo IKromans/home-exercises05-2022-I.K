@@ -2,13 +2,11 @@ package io.codelex.arithmetic.practice;
 
 import java.util.Scanner;
 
-import static io.codelex.arithmetic.practice.CalculateArea.getMenu;
-
 public class FooCorpPay {
     static double hourPay = 8;
     static double maxHours = 60;
-    static double basePay = 0;
-    static double hoursWorked = 0;
+//    static double basePay = 0;
+//    static double hoursWorked = 0;
 
     public static void main(String[] args) throws Exception {
 
@@ -22,12 +20,12 @@ public class FooCorpPay {
                 for (int i = 1; i <= 3; i++) {
                     System.out.println("Employee Nr. " + i);
                     System.out.print("Please enter Base Pay: ");
-                    basePay = input.nextDouble();
+                    double basePay = input.nextDouble();
 
                     System.out.print("Please enter Hours Worked: ");
-                    hoursWorked = input.nextDouble();
+                    double hoursWorked = input.nextDouble();
 
-                    calculateSalary();
+                    calculateSalary(basePay, hoursWorked);
                 }
             } else if (choice == 2) {
                 System.out.println("Thanks for calculating!");
@@ -60,7 +58,7 @@ public class FooCorpPay {
         return userChoice;
     }
 
-    public static void calculateSalary() throws Exception {
+    public static void calculateSalary(double basePay, double hoursWorked) throws Exception {
         double salary = 0;
         if (basePay < hourPay || hoursWorked > maxHours) {
             System.out.println("Error!!!");
