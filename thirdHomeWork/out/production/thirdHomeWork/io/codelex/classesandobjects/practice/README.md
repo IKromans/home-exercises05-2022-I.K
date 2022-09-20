@@ -34,6 +34,8 @@ Reflect your changes in a working application.
 
 ## Exercise #2
 
+See [carOdo](./carOdo)
+
 Think about the classes you need before you start writing. Let us do that with the Car class.
 
 Create a class called *Car*
@@ -113,6 +115,8 @@ Write a testing class with a main() that constructs a car and calls fillUp() and
 
 ## Exercise #3
 
+See [fuelGauge](./fuelGauge)
+
 For this exercise, you will design a set of classes that work together to simulate a car's fuel gauge and odometer. The classes you will design are the following:
 
 The FuelGauge Class: This class will simulate a fuel gauge. Its responsibilities are as follows:
@@ -133,6 +137,8 @@ Demonstrate the classes by creating instances of each. Simulate filling the car 
 
 ## Exercise #4
 
+See [movie](./movie)
+
 The class Movie is started below. An instance of class Movie represents a film. This class has the following three class variables:
 
  - *title*, which is a String representing the title of the movie
@@ -148,6 +154,8 @@ The class Movie is started below. An instance of class Movie represents a film. 
     - with the title “Spider-Man: Into the Spider-Verse”, the studio “Columbia Pictures” and the rating “PG”.
 
 ## Exercise #5
+
+See [date](./date)
 
 Create a class called *Date* that includes: three pieces of information as instance variables — a month, a
 day and a year.
@@ -170,6 +178,8 @@ A soft drink company recently surveyed 12,467 of its customers and found that ap
 See [EnergyDrinks.java](./EnergyDrinks.java)
 
 ## Exercise #7
+
+See [dog](./dog)
 
 The questions in this exercise all deal with a class Dog that you have to program from scratch. 
 
@@ -236,6 +246,8 @@ Ending balance: $42,030.72
 ```
 
 ## Exercise #9
+
+See [swapPoints.java](./swapPoints.java)
 
 Write a method named swapPoints that accepts two Points as parameters and swaps their x/y values.
 

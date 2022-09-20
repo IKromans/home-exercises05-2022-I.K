@@ -11,8 +11,8 @@ public class ProductShop {
         product2.setPriceAtStart(1099.99);
         product1.setPriceAtStart(59.99);
         product3.setPriceAtStart(562.00);
-        product3.printProduct();
-        product2.printProduct();
         product1.printProduct();
+        product2.printProduct();
+        product3.printProduct();
     }
 }

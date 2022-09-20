@@ -15,7 +15,6 @@ public class WordGuessing {
                 "bag", "table", "letter", "spoon", "book", "physics",
                 "aircraft", "webcam"};
 
-//        get random word from wordLibrary
         String randomWord = wordLibrary[(int) (Math.random() * wordLibrary.length)];
         System.out.println("Word has " + randomWord.length() + " letters");
         char[] letters = new char[randomWord.length()];
@@ -23,18 +22,16 @@ public class WordGuessing {
             letters[i] = '.';
         }
 
-//        set player lives
         int lives = 5;
         Scanner input = new Scanner(System.in);
 
-//        run game
         while (true) {
             System.out.print("You have " + lives + " lives left!");
             System.out.println();
             System.out.print("Input your guess: ");
             String keyboard = input.nextLine();
             char letter = keyboard.charAt(0);
-//            players guessed letters
+
             usedLetters.append(letter);
 
             boolean isGuessCorrect = false;
@@ -45,12 +42,10 @@ public class WordGuessing {
                     isGuessCorrect = true;
                 }
             }
-//            subtract lives if guess is wrong
             if (!isGuessCorrect) {
                 lives--;
             }
 
-//            check if word is guessed
             boolean isGameFinished = true;
             System.out.print("Word: ");
             for (int i = 0; i < letters.length; i++) {
@@ -63,7 +58,6 @@ public class WordGuessing {
             System.out.println("Your tries: " + usedLetters);
             System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-");
 
-//            game ends
             if (isGameFinished) {
                 System.out.println("You won!!!");
                 break;
