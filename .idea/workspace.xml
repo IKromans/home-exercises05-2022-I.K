@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6369ebaa-d9d3-4e81-be03-bdd643d78df8" name="Changes" comment="" />
+    <list default="true" id="6369ebaa-d9d3-4e81-be03-bdd643d78df8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +27,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/kroma/OneDrive/Desktop/Desktop/CODElex/Intensivie kursi/study/home-exercises05-2022-IK/home-exercises05-2022-IK/thirdHomeWork"
+    "last_opened_file_path": "C:/Users/kroma/OneDrive/Desktop/Desktop/CODElex/Intensivie kursi/study/home-exercises05-2022-IK/home-exercises05-2022-IK"
   }
 }]]></component>
   <component name="RunManager" selected="Application.SadFor">
@@ -77,6 +79,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="home-exercises05-2022-IK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="home-exercises05-2022-IK" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
