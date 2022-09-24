@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ad58e97-5215-4126-abad-f6daba5474bf" name="Changes" comment="" />
+    <list default="true" id="1ad58e97-5215-4126-abad-f6daba5474bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +34,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/kroma/OneDrive/Desktop/Desktop/CODElex/Intensivie kursi/study/home-exercises05-2022-IK/home-exercises05-2022-IK",
+    "last_opened_file_path": "C:/Users/kroma/OneDrive/Desktop/Desktop/CODElex/Intensivie kursi/study/home-exercises05-2022-IK/home-exercises05-2022-IK/secondhw",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
