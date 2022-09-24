@@ -20,9 +20,9 @@ public class PrintDayInWord {
                     case 5 -> System.out.println("Friday");
                     case 6 -> System.out.println("Saturday");
                 }
-            } else {
-                System.out.println("Not a valid day");
             }
+        } else {
+            System.out.println("Not a valid day");
         }
     }
 }

@@ -6,31 +6,17 @@ public class AsciiFigure {
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter number (only Nr.5 or 3 is  allowed :D): ");
-        int nrOfRows = input.nextInt();
-        int divider = 0;
-        if (nrOfRows > 5) {
-            divider += (nrOfRows - 5) * 2;
-        } else if (nrOfRows < 5) {
-            divider = (5 - nrOfRows) * 2;
-        } else {
-            divider = 5 - 3;
-        }
-        final int rows = nrOfRows * 4;
-        final int columns = 32;
-        final int slash = columns / divider;
-
-        for (int i = 1; i <= rows; i += 4) {
-            for (int j = i; j <= slash; j++) {
+        System.out.print("Enter row count : ");
+        int rows = input.nextInt();
+        final int columns = (rows - 1) * 8;
+        for (int i = 0; i <= columns; i += 8) {
+            for (int j = 1; j <= (columns - i) / 2; j++) {
                 System.out.print("/");
             }
-            for (int j = 1; j < i; j++) {
+            for (int k = 1; k <= i; k++) {
                 System.out.print("*");
             }
-            for (int j = 1; j < i; j++) {
-                System.out.print("*");
-            }
-            for (int j = i; j <= slash; j++) {
+            for (int g = 1; g <= (columns - i) / 2; g++) {
                 System.out.print("\\");
             }
             System.out.println();

@@ -13,19 +13,18 @@ public class FizzBuzz {
         for (int i = 1; i <= number; i++) {
             if (i % 15 == 0) {
                 System.out.print("FizzBuzz ");
-                if (i % 20 == 0) {
-                    System.out.println();
-                }
+
             } else if (i % 5 == 0) {
                 System.out.print("Buzz ");
-                if (i % 20 == 0) {
-                    System.out.println();
-                }
+
             } else if (i % 3 == 0) {
                 System.out.print("Fizz ");
 
             } else {
                 System.out.print(i + " ");
+            }
+            if (i % 20 == 0) {
+                System.out.println();
             }
 
         }
