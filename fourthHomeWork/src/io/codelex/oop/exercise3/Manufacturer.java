@@ -13,6 +13,27 @@ public class Manufacturer {
         this.country = country;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public long getYearOfEstablishment() {
+        return yearOfEstablishment;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    @Override
+    public String toString() {
+        return "Manufacturer{" +
+                "name='" + name + '\'' +
+                ", yearOfEstablishment=" + yearOfEstablishment +
+                ", country='" + country + '\'' +
+                '}';
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

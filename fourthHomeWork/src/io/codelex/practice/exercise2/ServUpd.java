@@ -1,4 +1,4 @@
-package io.codelex.practice.exercise2;
+package io.codelex.dateandtime.practice.exercise2;
 
 import java.time.LocalDate;
 import java.time.YearMonth;
@@ -16,8 +16,10 @@ public class ServUpd {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM");
         LocalDate end = YearMonth.parse(secondDate, formatter).atEndOfMonth();
 
-//        Stream.iterate(start, date -> date.plusWeeks(2))
-//                .limit(WEEKS.between(start, end))
-//                .forEach(System.out::println);
+        for (LocalDate date = start; date.isBefore(end); date = date.plusWeeks(2)) {
+            if (date.getMonth() == end.getMonth() && date.getYear() == end.getYear()) {
+                System.out.println("Need to make an update at : " + date);
+            }
+        }
     }
 }

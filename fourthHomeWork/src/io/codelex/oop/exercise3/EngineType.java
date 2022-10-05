@@ -8,6 +8,8 @@ public enum EngineType implements Predicate<String> {
     V6,
     S6,
     S4,
+    AIR_COOLED,
+    HYBRID,
     S3;
 
     @Override

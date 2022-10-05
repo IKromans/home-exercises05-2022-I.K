@@ -11,13 +11,19 @@ public class Car {
     private int yearOfManufacture;
     private EngineType engineType;
 
-    List<Manufacturer> manufactureList = new ArrayList<>();
+    List<Manufacturer> manufactureList;
 
     public Car(String name, String model, double price, int yearOfManufacture, EngineType engineType) {
         this.name = name;
         this.model = model;
         this.price = price;
         this.yearOfManufacture = yearOfManufacture;
+        this.engineType = engineType;
+        manufactureList = new ArrayList<>();
+    }
+
+    public void addManufacturers(Manufacturer brand){
+        manufactureList.add(brand);
     }
 
     public String getName() {
@@ -64,10 +70,6 @@ public class Car {
         return manufactureList;
     }
 
-    public void setManufactureList(List<Manufacturer> manufactureList) {
-        this.manufactureList = manufactureList;
-    }
-
     @Override
     public String toString() {
         return "Car{" +
@@ -77,7 +79,7 @@ public class Car {
                 ", yearOfManufacture=" + yearOfManufacture +
                 ", engineType=" + engineType +
                 ", manufactureList=" + manufactureList +
-                '}';
+                '}' + "\n";
     }
 
     @Override
