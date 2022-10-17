@@ -1,24 +1,19 @@
 package io.codelex.java_advanced_test.exercise3;
 
-import java.util.function.BiFunction;
-import java.util.function.Function;
+import java.sql.PreparedStatement;
+import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class Joiner<T> {
 
-    private T value;
+    private final String separator;
 
-    private String separator;
-
-    private Function<T, String> joiner;
-
-    public Joiner(T value, String separator, Function<T, String> joiner) {
-        this.value = value;
+    public Joiner(String separator) {
         this.separator = separator;
-        this.joiner = joiner;
     }
 
-    public String join(T value){
-        return joiner.apply(value);
+    @SafeVarargs
+    public final String join(T... args) {
+        return Stream.of(args).map(T::toString).reduce((a, b) -> a + separator + b).get();
     }
-
 }
