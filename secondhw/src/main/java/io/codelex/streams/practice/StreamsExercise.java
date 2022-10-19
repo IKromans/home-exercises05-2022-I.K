@@ -104,30 +104,23 @@ public class StreamsExercise {
     }
 
     public static List<Integer> generateFirst10PrimeNumbers() {
-        return new Random().ints(1000000, 2, 30).filter(StreamsExercise::isPrime).sorted().boxed().collect(toList());
+        return IntStream.range(2, 100).filter(StreamsExercise::isPrime).limit(10).boxed().collect(Collectors.toList());
     }
 
     public static boolean isPrime(int number) {
-        return number > 1 && IntStream.range(2, number).noneMatch(i -> true);
+        return number > 1 && IntStream.range(2, number).noneMatch(i -> number % i == 0);
     }
 
     public static List<Integer> generate10RandomNumbers() {
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) list.add(i % 2);
-        Collections.shuffle(list);
-        return list;
+        return new Random().ints(10).boxed().collect(Collectors.toList());
     }
 
     public static User findOldest(List<User> users) {
-        return users.stream().reduce((a, b) -> a.getAge() < b.getAge() ? b : a).get();
+        return users.stream().max(Comparator.comparingInt(User::getAge)).get();
     }
 
     public static int sumAge(List<User> users) {
-        int sum = 0;
-        for (int i = 0; i < users.size(); i++) {
-            sum += users.get(i).getAge();
-        }
-        return sum;
+        return users.stream().mapToInt(User::getAge).sum();
     }
 
     public static IntSummaryStatistics ageSummaryStatistics(List<User> users) {
