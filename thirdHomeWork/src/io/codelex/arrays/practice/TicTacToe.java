@@ -16,25 +16,23 @@ public class TicTacToe {
         System.out.println("Let the battle begin!!");
 
         initBoard();
-//        Create boolean for player's turns
-        boolean p1 = true;
+        boolean isPlayersOneTurn = true;
         boolean gameOver = false;
         while (!gameOver) {
 
             displayBoard();
 
-            if (p1) {
+            if (isPlayersOneTurn) {
                 System.out.print(player1);
             } else {
                 System.out.print(player2);
             }
 
-//            Symbol for player's turn
-            char symbol = ' ';
-            if (p1) {
-                symbol = 'X';
+            char playersTurnSymbol = ' ';
+            if (isPlayersOneTurn) {
+                playersTurnSymbol = 'X';
             } else {
-                symbol = 'O';
+                playersTurnSymbol = 'O';
             }
 
             int row = 0;
@@ -51,7 +49,7 @@ public class TicTacToe {
                 } else if (board[row][col] != ' ') {
                     System.out.println("Someone has already made a move at this position! Try again. (row, column):");
                 } else {
-                    board[row][col] = symbol;
+                    board[row][col] = playersTurnSymbol;
                     break;
                 }
             }
@@ -68,7 +66,7 @@ public class TicTacToe {
                     System.out.println("It's a tie!");
                     gameOver = true;
                 } else {
-                    p1 = !p1;
+                    isPlayersOneTurn = !isPlayersOneTurn;
                 }
             }
         }

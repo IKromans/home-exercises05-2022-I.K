@@ -2,10 +2,10 @@ package io.codelex.classesandobjects.practice.dog;
 
 
 public class Dog {
-    String mother;
-    String father;
-    String name;
-    String gender;
+    private String mother;
+    private String father;
+    private String name;
+    private String gender;
 
     public Dog(String mother, String father, String name, String gender) {
         this.mother = mother;

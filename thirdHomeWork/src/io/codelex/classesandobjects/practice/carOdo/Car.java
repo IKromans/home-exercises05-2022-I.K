@@ -1,6 +1,8 @@
 package io.codelex.classesandobjects.practice.carOdo;
 
 public class Car {
+    static private final int MAX_CONSUMPTION = 15;
+    static private final int MIN_CONSUMPTION = 5;
     private double startKilometers;
     private double endKilometers;
     private double liters;
@@ -21,10 +23,10 @@ public class Car {
     }
 
     public boolean isGasHog() {
-        return (calculateConsumption() > 15);
+        return calculateConsumption() > MAX_CONSUMPTION;
     }
 
     public boolean isEconomyCar() {
-        return (calculateConsumption() < 5);
+        return calculateConsumption() < MIN_CONSUMPTION;
     }
 }

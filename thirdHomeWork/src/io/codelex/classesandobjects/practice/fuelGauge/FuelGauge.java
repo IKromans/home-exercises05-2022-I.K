@@ -2,16 +2,16 @@ package io.codelex.classesandobjects.practice.fuelGauge;
 
 public class FuelGauge {
     int fuelAmount;
-    final int maxLiters = 70;
+    static final int MAX_LITRES = 70;
 
     public FuelGauge() {
     }
 
     public FuelGauge(int fuelAmount) {
-        if (fuelAmount <= maxLiters) {
+        if (fuelAmount <= MAX_LITRES) {
             this.fuelAmount = fuelAmount;
         } else {
-            this.fuelAmount = maxLiters;
+            this.fuelAmount = MAX_LITRES;
         }
     }
 
@@ -20,7 +20,7 @@ public class FuelGauge {
     }
 
     public void addFuelAmount() {
-        if (fuelAmount < maxLiters) {
+        if (fuelAmount < MAX_LITRES) {
             fuelAmount++;
         }
     }

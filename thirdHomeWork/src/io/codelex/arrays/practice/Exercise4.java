@@ -11,15 +11,15 @@ public class Exercise4 {
         };
 
         int i;
-        boolean ifYes = false;
+        boolean isContainingSpecificValue = false;
         int fixme = 1245;
         for (i = 0; i < myArray.length; i++) {
             if (myArray[i] == fixme) {
-                ifYes = true;
+                isContainingSpecificValue = true;
                 break;
             }
         }
-        if (ifYes) {
+        if (isContainingSpecificValue) {
             System.out.println("Found " + fixme + " at index " + i);
         } else {
             System.out.println(fixme + " is not in the array");

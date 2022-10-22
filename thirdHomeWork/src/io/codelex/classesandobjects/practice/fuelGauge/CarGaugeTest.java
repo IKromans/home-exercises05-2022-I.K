@@ -7,7 +7,7 @@ public class CarGaugeTest {
         FuelGauge fuelGauge = new FuelGauge();
         Odometer odometer = new Odometer(0, fuelGauge);
 
-        for (int i = 0; i < fuelGauge.maxLiters; i++) {
+        for (int i = 0; i < fuelGauge.MAX_LITRES; i++) {
             fuelGauge.addFuelAmount();
         }
         while (fuelGauge.getFuelAmount() > 0) {

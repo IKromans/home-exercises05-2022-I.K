@@ -3,6 +3,7 @@ package io.codelex.arrays.practice;
 import java.util.Scanner;
 
 public class WordGuessing {
+    static int LIVES = 5;
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Welcome to Word Guessing Game!");
         Thread.sleep(1000);
@@ -22,11 +23,10 @@ public class WordGuessing {
             letters[i] = '.';
         }
 
-        int lives = 5;
         Scanner input = new Scanner(System.in);
 
         while (true) {
-            System.out.print("You have " + lives + " lives left!");
+            System.out.print("You have " + LIVES + " lives left!");
             System.out.println();
             System.out.print("Input your guess: ");
             String keyboard = input.nextLine();
@@ -43,7 +43,7 @@ public class WordGuessing {
                 }
             }
             if (!isGuessCorrect) {
-                lives--;
+                LIVES--;
             }
 
             boolean isGameFinished = true;
@@ -62,7 +62,7 @@ public class WordGuessing {
                 System.out.println("You won!!!");
                 break;
             }
-            if (lives == 0) {
+            if (LIVES == 0) {
                 System.out.println("You lost! The word was: " + randomWord);
                 break;
             }
